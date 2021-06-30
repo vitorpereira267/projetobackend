@@ -7,10 +7,10 @@ var categoryController=require('../controllers/categoryController')
 var personController = require('../controllers/personController')
 
 //Users
-router.get('/', personController.getPersons);
-router.post('/', personController.postPersons);
-router.delete('/', personController.deletePersons);
-router.put('/:users_ID', personController.putPersons);
+router.get('/person', personController.getPersons);
+router.post('/person', personController.postPersons);
+router.delete('/person', personController.deletePersons);
+router.put('/person/:users_ID', personController.putPersons);
 
 
 //GAME
